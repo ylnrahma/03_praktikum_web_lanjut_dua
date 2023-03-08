@@ -14,8 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
+Route::get('/', function () {
+    return view('welcome');
+});
 
-Route::get('/',[Layout::class, 'index']);
+// Route::get('/',[Layout::class, 'index']);
+
+Route::get('/home', [HomeController::class, 'index'])->name('dashboard');
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
+Route::get('/kuliah', [KuliahController::class, 'index'])->name('kuliah');

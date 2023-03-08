@@ -2,6 +2,10 @@
 
 use App\Http\Controllers\Layout;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\KuliahController;
+use App\Http\Controllers\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
